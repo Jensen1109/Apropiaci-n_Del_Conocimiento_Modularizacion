@@ -1,3 +1,4 @@
+import { CalcularSubtotal } from "./modulos/valortotal";
 // Funcion que calcula el subtotal: cantidad × precio
 function CalcularSubtotal(cantidad , precio)
 {
