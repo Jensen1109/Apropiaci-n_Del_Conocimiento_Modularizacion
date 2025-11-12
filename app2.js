@@ -1,21 +1,24 @@
-function Calcularpromedio(not1,not2,not3)
-{
-    not1=parseFloat(prompt("Ingrese la nota 1: "))
-    not2=parseFloat(prompt("Ingrese la nota 2: "))
-    not3=parseFloat(prompt("Ingrese la nota 3: "))
+// Creamos una función llamada Calcularpromedio con tres parámetros
+function Calcularpromedio(not1, not2, not3) {
 
-    let promedio = (not1 + not2 + not3)/3
+    // Pedimos al usuario que ingrese las tres notas
+    not1 = parseFloat(prompt("Ingrese la nota 1: "));
+    not2 = parseFloat(prompt("Ingrese la nota 2: "));
+    not3 = parseFloat(prompt("Ingrese la nota 3: "));
 
-    if(promedio>=3.0)
-    {
-        alert("Aprobo")
+    // Calculamos el promedio
+    let promedio = (not1 + not2 + not3) / 3;
+
+    // Verificamos si el promedio es mayor o igual a 3.0
+    if (promedio >= 3.0) {
+        alert("Aprobó"); // Mensaje si aprueba
+    } else {
+        alert("Reprobó"); // Mensaje si reprueba
     }
 
-    else
-    {
-        alert("Reprobo")
-    }
-
+    // Retornamos el promedio
     return promedio;
 }
-Calcularpromedio()
+
+// Ejecutamos la función
+Calcularpromedio();
