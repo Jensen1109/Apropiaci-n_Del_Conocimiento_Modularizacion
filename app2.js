@@ -1,4 +1,4 @@
-// Creamos una función llamada Calcularpromedio con tres parámetros
+// Creamos una funcion llamada Calcularpromedio con tres parametros
 function Calcularpromedio(not1, not2, not3) {
 
     // Pedimos al usuario que ingrese las tres notas
@@ -20,5 +20,5 @@ function Calcularpromedio(not1, not2, not3) {
     return promedio;
 }
 
-// Ejecutamos la función
+// Ejecutamos la funcion
 Calcularpromedio();
