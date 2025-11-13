@@ -1,21 +1,4 @@
-import { CalcularSubtotal } from "./modulos/valortotal";
-// Funcion que calcula el subtotal: cantidad × precio
-function CalcularSubtotal(cantidad , precio)
-{
-    return cantidad * precio;
-}
-
-// Funcion que calcula el IVA (19%) sobre el subtotal
-function CalcularIva(Subtotal)
-{
-    return Subtotal * 0.19;
-}
-
-// Funcion que calcula el total a pagar: subtotal + IVA
-function CalcularTotal(Subtotal,iva)
-{
-    return Subtotal + iva;
-}
+import { CalcularSubtotal, CalcularIva, CalcularTotal } from "./modulos/valortotal.js";
 
 // Pedimos al usuario los datos necesarios
 let cantidad = parseInt(prompt("Ingrese la cantidad de productos: "))
@@ -28,3 +11,7 @@ let total = CalcularTotal(Subtotal,iva);
 
 // Mostramos el resultado final
 alert(`subtotal: ${Subtotal} iva(19%): ${iva} total a pagar: ${total}`)
+
+CalcularSubtotal(cantidad,precio)
+CalcularIva(Subtotal)
+CalcularTotal(Subtotal,iva)

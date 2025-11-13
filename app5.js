@@ -1,49 +1,11 @@
-// Funcion para validar que el numero sea mayor que 1
-function Validarnumero(n)
-{
-    return n>1;
-}
+// Importamos la funcion mostrar_mensaje desde el archivo validar_numero.js ubicado en la carpeta modulos
+import { mostrar_mensaje } from "./modulos/validar_numero.js";
 
-// Funcion para contar cuantos divisores tiene el numero
-function Contardivisores (n)
-{
-    let divisores = 0;
-    for(let i = 1; i<=n;i++)
-    {
-    if(n % i === 0){
-        divisores++;
-        }    
-    }
-    return divisores;
-    
-}
+// Pedimos al usuario que ingrese un numero y lo guardamos como texto
+let numero = prompt("Ingrese un numero:");
 
-// Funcion para mostrar si el numero es primo o no
-function mostrarresultado(n, divisores)
-{
-    if(divisores ===2)
-    {
-        alert(`El numero ${n} es primo`)
-    }
-    else
-    {
-        alert(`El numero ${n} no es primo`)
-    }
-}
-// Funcion principal que une todo
-function verificarprimo()
-{
-    let n = parseInt(prompt("Ingrese un numero: "))
-    if(Validarnumero(n))
-    {
-        let divisores = Contardivisores(n);
-        mostrarresultado(n,divisores)
-    }
-    else
-    {
-        alert(`El numero debe ser mayor que 1`)
-    }
-}
+// Convertimos el valor ingresado a numero entero usando parseInt
+numero = parseInt(numero);
 
-// Ejecutamos el programa
-verificarprimo()
+// Llamamos la funcion mostrar_mensaje pasando el numero como argumento
+mostrar_mensaje(numero);
